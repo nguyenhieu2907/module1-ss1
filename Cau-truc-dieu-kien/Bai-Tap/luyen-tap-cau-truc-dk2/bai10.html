@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var kWh=parseFloat(prompt("Nhập số điện dùng "));
+    
+    if (kWh<=50){
+         tiendien=kWh*1.678
+         document.write(tiendien1+ " VND là số tiền phải trả")
+    }
+    else if (kWh<=100){
+        tiendien=50*1.678+(kWh-50)*1.734
+        document.write(tiendien+ " VND là số tiền phải trả")
+    }
+    else if (kWh<=200){
+        tiendien=50*1.678+100*1.734+(kWh-100)*2.014
+        document.write(tiendien+ " VND là số tiền phải trả")
+    }
+    else {
+        tiendien=50*1678+100*1.734+200*2.014+(kWh-200)*2.536
+        document.write(tiendien+ " VND là số tiền phải trả")
+    }
+    </script>
+    
+</body>
+</html>
